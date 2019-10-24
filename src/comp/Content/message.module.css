@@ -1,0 +1,40 @@
+.carousel {
+    height: 362px;
+    width: 936px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imgWrapper,.imgWrapper img {
+    width: 936px;
+    height: 362px;
+}
+
+.babyTitle {
+    width: 100%;
+    text-align: center;
+    height: 54px;
+    line-height: 54px;
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.babyWrapper {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.babyItem {
+    width: 324px;
+    height: 524px;
+    border-radius: 10px;
+    background-color: #7cffe0;
+}
+
+.babyItem:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+}

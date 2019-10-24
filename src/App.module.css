@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+  z-index: 101;
+}
+.header ul {
+  width: 1180px;
+  margin: 0 auto;
+}
+.menu {
+  position: relative;
+}
+.menuItem1 {
+  margin-left: 156px;
+}
+.menuItem2 {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: -64px;
+  left: 0;
+  width: 186px;
+  height: 80px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.logoImg {
+  width: 186px;
+  height: 80px;
+}
+.content {
+  width: 1180px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
