@@ -30,7 +30,7 @@ function App() {
                 </div>
               </Menu.Item>
               <Menu.Item key="1" className={AppStyles.menuItem1}><Link to='/'>nav 1</Link></Menu.Item>
-              <Menu.Item key="2"><Link to='/about'>about</Link></Menu.Item>
+              <Menu.Item key="2"><Link to='/about'>aboutttttt</Link></Menu.Item>
               <Menu.Item key="3"><Link to='/inbox'>inbox</Link></Menu.Item>
             </Menu>
           </Header>
