@@ -18,7 +18,6 @@
     margin: 20px 0;
     font-size: 36px;
     font-weight: 500;
-    font-weight: bolder;
     color: #76b2d3;
 }
 
@@ -39,3 +38,50 @@
 .babyItem:hover {
     box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
+
+.headImg{
+    width: 324px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+.titleWrapper{
+    display: flex;
+}
+.titleTxt{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #76b2d3;
+}
+.contentTxt{
+    padding: 0 14px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #919390;
+    line-height: 1.8em;
+}
+
+.shapeWrapper {
+
+}
+
+.shapeItem {
+    background-color: unset;
+}
+
+.diamond {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transform: translate(85px, 30px) rotate(45deg);
+}
+.shapeContent {
+    margin-top: 64px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100%;
+}
+
