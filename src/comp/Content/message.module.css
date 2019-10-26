@@ -1,14 +1,13 @@
 .carousel {
-    height: 362px;
-    width: 936px;
+    height: 352px;
+    width: 1250px;
     margin: 0 auto;
-    margin-top: 20px;
     border-radius: 10px;
     overflow: hidden;
 }
 .imgWrapper,.imgWrapper img {
-    width: 936px;
-    height: 362px;
+    width: 1250px;
+    height: 352px;
 }
 
 .babyTitle {
@@ -19,6 +18,8 @@
     margin: 20px 0;
     font-size: 36px;
     font-weight: 500;
+    font-weight: bolder;
+    color: #76b2d3;
 }
 
 .babyWrapper {
@@ -30,7 +31,7 @@
 
 .babyItem {
     width: 324px;
-    height: 524px;
+    height: 510x;
     border-radius: 10px;
     background-color: #7cffe0;
 }

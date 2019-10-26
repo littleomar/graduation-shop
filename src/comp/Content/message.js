@@ -1,6 +1,10 @@
 import React, {Fragment} from "react";
 import { Carousel } from "antd";
+import Content1 from './jy1.js';
 import MessageStyles from './message.module.css'
+import banner1 from '../../statics/banner1.png'
+import banner2 from '../../statics/banner2.png'
+import AppStyles from "../../App.module.css";
 
 class Message extends React.Component {
 
@@ -9,20 +13,19 @@ class Message extends React.Component {
       <Fragment>
         <Carousel className={MessageStyles.carousel} autoplay>
           <div className={MessageStyles.imgWrapper}>
-            <img src="http://img.mukewang.com/5d8c9af600011f4c18720764.jpg" alt=""/>
+            <img className={AppStyles.banner1} src={banner1} alt=""/>
           </div>
           <div className={MessageStyles.imgWrapper}>
-            <img src="http://img.mukewang.com/5d8d6d8c0001523518720764.jpg" alt=""/>
-          </div>
-          <div className={MessageStyles.imgWrapper}>
-            <img src="http://img.mukewang.com/5da52155000159d118720764.jpg" alt=""/>
+            <img className={AppStyles.banner2} src={banner2} alt=""/>
           </div>
         </Carousel>
         <div className={MessageStyles.babyTitle}>
-          引导宝贝尽情探索的课程
+          我们有最优秀，最全面的教育机构
         </div>
         <div className={MessageStyles.babyWrapper}>
-          <div className={MessageStyles.babyItem}>1</div>
+          <div className={MessageStyles.babyItem}>
+            <Content1 />
+          </div>
           <div className={MessageStyles.babyItem}>2</div>
           <div className={MessageStyles.babyItem}>3</div>
         </div>
