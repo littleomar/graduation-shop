@@ -103,6 +103,11 @@ class Message extends React.Component {
             </div>
           </div>
         </div>
+        <div className={MessageStyles.babyWrapper}>
+          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
+          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
+          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
+        </div>
       </Fragment>
     )
   }
