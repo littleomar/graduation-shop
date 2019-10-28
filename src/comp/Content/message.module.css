@@ -30,9 +30,9 @@
 
 .babyItem {
     width: 324px;
-    height: 510x;
+    height: 600x;
     border-radius: 10px;
-    background-color: #7cffe0;
+    background-color: white;
 }
 
 .babyItem:hover {
@@ -77,6 +77,7 @@
     height: 150px;
     background-color: red;
     transform: translate(85px, 30px) rotate(45deg);
+
 }
 .shapeContent {
     margin-top: 64px;
