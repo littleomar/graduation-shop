@@ -33,6 +33,14 @@ class Message extends React.Component {
             ))
           }
         </Carousel>
+        <div className={MessageStyles.right_nav}>
+          <ul className={MessageStyles.ule}>
+            <li className={MessageStyles.audition} />
+            <li className={MessageStyles.auditionb} />
+            <li className={MessageStyles.auditionc} />
+            <li className={MessageStyles.auditiond} />
+          </ul>
+        </div>
         <div className={MessageStyles.babyTitle}>
           我们有最优秀，最全面的教育机构
         </div>
