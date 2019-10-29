@@ -45,7 +45,9 @@ function App() {
             </Switch>
           </Content>
         </Layout>
-        <div className={AppStyles.hello}> aaaaaaa</div>
+        <div className={AppStyles.footer}>
+          <div className={AppStyles.Copyright}>aaaaaaa</div>
+        </div>
       </BrowserRouter>
   );
 }

@@ -39,6 +39,53 @@
     box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
 
+.right_nav{
+    bottom: 0;
+}
+.right_nav{
+    float: right;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    padding-left: 91px;
+    padding-bottom: 10px;
+    z-index: 999;
+    font-size: 16px;
+}
+.ule{
+    list-style: none;
+    border-radius: 8px;
+}
+.audition{
+    background: #76b2d3;
+    background-image: url("../../statics/r1.png");
+    display: block;
+    border-radius: 8px;
+    height: 70px;
+    width: 64px;
+}
+.auditionb{
+    background-image: url("../../statics/r2.png");
+    display: block;
+    border-radius: 8px;
+    height: 70px;
+    width: 64px;
+}
+.auditionc{
+    background-image: url("../../statics/r3.png");
+    display: block;
+    border-radius: 8px;
+    height: 70px;
+    width: 64px;
+}
+.auditiond{
+    background-image: url("../../statics/r4.png");
+    display: block;
+    border-radius: 8px;
+    height: 70px;
+    width: 64px;
+}
+
 .headImg{
     width: 324px;
     height: 200px;
@@ -48,6 +95,7 @@
 }
 .titleWrapper{
     display: flex;
+    margin-left: 10px;
 }
 .titleTxt{
     padding-left: 20px;
@@ -104,4 +152,21 @@
     width: 324px;
     margin-top: 64px;
 }
+.titlea{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #76b2d3;
+    text-align: center;
+}
+.contenta{
+    font-size: 16px;
+    font-weight: 300;
+    color: #919390;
+    margin-bottom: 1em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
 

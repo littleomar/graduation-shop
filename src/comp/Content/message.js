@@ -4,7 +4,7 @@ import MessageStyles from './message.module.css'
 import banner1 from '../../statics/banner1.png'
 import banner2 from '../../statics/banner2.png'
 import AppStyles from "../../App.module.css";
-import headImg1 from '../../statics/zd1.png';
+import headImg1 from '../../statics/zd.css.png';
 import headImg2 from '../../statics/xx1.png';
 import headImg3 from '../../statics/hj1.png';
 import decImg1 from '../../statics/1.png';
@@ -52,6 +52,14 @@ class Message extends React.Component {
             <img className={AppStyles.banner2} src={banner2} alt=""/>
           </div>
         </Carousel>
+        <div className={MessageStyles.right_nav}>
+          <ul className={MessageStyles.ule}>
+            <li className={MessageStyles.audition}></li>
+            <li className={MessageStyles.auditionb}></li>
+            <li className={MessageStyles.auditionc}></li>
+            <li className={MessageStyles.auditiond}></li>
+          </ul>
+        </div>
         <div className={MessageStyles.babyTitle}>
           我们有最优秀，最全面的教育机构
         </div>
@@ -79,34 +87,31 @@ class Message extends React.Component {
             <div className={MessageStyles.diamond}>
               <img src={xx1} alt="" />
             </div>
-            <div className = {MessageStyles.shapeContent}>
-              <p>从0岁到到三岁。
-                课程提供适龄游戏，帮助家长发现宝宝的兴趣，让宝宝在过程中不断探索自己的能力。</p>
-            </div>
           </div>
           <div className = {`${MessageStyles.babyItem} ${MessageStyles.shapeItem}`}>
             <div className={MessageStyles.diamond}>
               <img src={xx2} alt="" />
-            </div>
-            <div className = {MessageStyles.shapeContent}>
-              <p>从6个月到五岁
-                20种音乐风格、乐器的使用，让家长掌握与孩子共同探索音乐的方式。</p>
             </div>
           </div>
           <div className = {`${MessageStyles.babyItem} ${MessageStyles.shapeItem}`}>
             <div className={MessageStyles.diamond}>
               <img src={xx3} alt="" />
             </div>
-            <div className = {MessageStyles.shapeContent}>
-              <p>从18个月到5岁
-                别出心裁的艺术工具，丰富孩子对自我和环境的表达和探索提高孩子的表达力、专注力、审美能力。</p>
-            </div>
           </div>
         </div>
         <div className={MessageStyles.babyWrapper}>
-          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
-          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
-          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
+          <div className={MessageStyles.shapeTxtItem}>
+            <div className={MessageStyles.titlea}>从0岁到到三岁</div>
+            <div className={MessageStyles.contenta}>课程提供适龄游戏，帮助家长发现宝宝的兴趣，让宝宝在过程中不断探索自己的能力。</div>
+          </div>
+          <div className={MessageStyles.shapeTxtItem}>
+            <div className={MessageStyles.titlea}>从6个月到五岁</div>
+            <div className={MessageStyles.contenta}>20种音乐风格、乐器的使用，让家长掌握与孩子共同探索音乐的方式。</div>
+          </div>
+          <div className={MessageStyles.shapeTxtItem}>
+            <div className={MessageStyles.titlea}>从18个月到5岁</div>
+            <div className={MessageStyles.contenta}>别出心裁的艺术工具，丰富孩子对自我和环境的表达和探索提高孩子的表达力、专注力、审美能力。</div>
+          </div>
         </div>
       </Fragment>
     )
