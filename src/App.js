@@ -18,6 +18,59 @@ const { Header, Content } = Layout;
 
 // 主页
 function App() {
+  const copyArr = [
+    {
+      title: '关于我们',
+      content: [
+        {
+          text: '全球网络',
+          url: 'www.baidu.com'
+        },
+        {
+          text: '品牌介绍',
+          url: 'www.baidu.com'
+        },
+        {
+          text: '课程介绍',
+          url: 'www.baidu.com'
+        }
+      ]
+    },
+    {
+      title: '关于我们',
+      content: [
+        {
+          text: '全球网络',
+          url: 'www.baidu.com'
+        },
+        {
+          text: '品牌介绍',
+          url: 'www.baidu.com'
+        },
+        {
+          text: '课程介绍',
+          url: 'www.baidu.com'
+        }
+      ]
+    },
+    {
+      title: '关于我们',
+      content: [
+        {
+          text: '全球网络',
+          url: 'www.baidu.com'
+        },
+        {
+          text: '品牌介绍',
+          url: 'www.baidu.com'
+        },
+        {
+          text: '课程介绍',
+          url: 'www.baidu.com'
+        }
+      ]
+    }
+  ];
   return (
       <BrowserRouter>
         <Layout className="layout">
@@ -49,44 +102,23 @@ function App() {
           </Content>
         </Layout>
         <div className={AppStyles.footer}>
-          <div className={AppStyles.main_width}>
-              <div className={AppStyles.codea}>
-               <img src={codea}/>
-               <span>官方微信服务号</span>
-              </div>
-                <div>
-                  <ul className={AppStyles.sub}>
-                    <li>
-                      关于我们
-                      <ul>
-                        <li>11</li>
-                      </ul>
-                    </li>
-                    <li>
-                      联系我们
-                      <ul>
-                        <li>22</li>
-                      </ul>
-                    </li>
-                    <li>
-                     用户须知
-                      <ul>
-                        <li>33</li>
-                      </ul>
-                   </li>
-                  </ul>
-                </div>
-               <div className={AppStyles.codee}>
-                  <img src={codeb}/>
-                  <span>官方微信订阅号</span>
-               </div>
-            <div className={AppStyles.copyright}>
-              "金宝贝(天津)教育信息咨询有限公司上海分公司"<br/>
-              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402005955">
-                <img className={AppStyles.ig} src={ig}/>"泸工网安备  31010402005955号"
-              </a>
-              <span className={AppStyles.j}>泸ICP备12016779号-9</span>
+          <div className={AppStyles.footerWrapper}>
+            <div className={AppStyles.footerLeft}>
+              {
+                copyArr.map(item => (
+                  <dl className={AppStyles.crItem}>
+                    <dt className={AppStyles.crTitle}>{item.title}</dt>
+                    {
+                      item.content.map(subItem => (
+                        <dd className={AppStyles.crText}><a href={subItem.url}>{subItem.text}</a></dd>
+                      ))
+                    }
+                  </dl>
+                ))
+              }
+
             </div>
+            <div className={AppStyles.footerRight}>二维码</div>
           </div>
         </div>
       </BrowserRouter>

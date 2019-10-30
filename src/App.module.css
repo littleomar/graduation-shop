@@ -90,3 +90,27 @@
 .j{
     padding-left: 15px;
 }
+
+.footerWrapper {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLeft {
+    display: flex;
+}
+
+.crItem {
+    width: 200px;
+}
+
+.crTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.crText {
+    cursor: pointer;
+}
