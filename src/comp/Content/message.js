@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import { Carousel } from "antd";
-import axios from 'axios';
+import axios from 'axios';//前端用于请求接口封装的包
 import MessageStyles from './message.module.css'
 import AppStyles from "../../App.module.css";
 
@@ -12,12 +12,12 @@ class Message extends React.Component {
       banner: [],
       shapeData: [],
     };
-  }
+  }//初始化数据，后台赋值
   async componentDidMount() {
     this.setState({
       banner: (await axios.get(`http://ccimm.top:8000/banner`)).data,
       babyData: (await axios.get(`http://ccimm.top:8000/baby`)).data,
-      shapeData: (await axios.get(`http://ccimm.top:8000/shape`)).data,
+      shapeData: (await axios.get(`http://ccimm.top:8000/shape`)).data,//请求接口数据
     })
   }
 
@@ -83,11 +83,6 @@ class Message extends React.Component {
               </div>
             ))
           }
-        </div>
-        <div className={MessageStyles.babyWrapper}>
-          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
-          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
-          <div className={MessageStyles.shapeTxtItem}>配合金宝贝课程特别研发，我们为孩子打造森林、湖泊、火山、</div>
         </div>
       </Fragment>
     )
