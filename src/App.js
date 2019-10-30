@@ -8,7 +8,10 @@ import About from './comp/Content/about.js'
 import MyHeader from "./comp/Header/index.js";
 // import InBox from "./comp/Content/inbox.js";
 import AppStyles from './App.module.css'
-import logoImg from './statics/logo.png'
+import logoImg from './statics/logo.png';
+import codea from './statics/footer_code1.jpg';
+import codeb from './statics/footer_code2.jpg';
+import ig from './statics/beian.png';
 
 
 const { Header, Content } = Layout;
@@ -46,7 +49,45 @@ function App() {
           </Content>
         </Layout>
         <div className={AppStyles.footer}>
-          <div className={AppStyles.Copyright}>aaaaaaa</div>
+          <div className={AppStyles.main_width}>
+              <div className={AppStyles.codea}>
+               <img src={codea}/>
+               <span>官方微信服务号</span>
+              </div>
+                <div>
+                  <ul className={AppStyles.sub}>
+                    <li>
+                      关于我们
+                      <ul>
+                        <li>11</li>
+                      </ul>
+                    </li>
+                    <li>
+                      联系我们
+                      <ul>
+                        <li>22</li>
+                      </ul>
+                    </li>
+                    <li>
+                     用户须知
+                      <ul>
+                        <li>33</li>
+                      </ul>
+                   </li>
+                  </ul>
+                </div>
+               <div className={AppStyles.codee}>
+                  <img src={codeb}/>
+                  <span>官方微信订阅号</span>
+               </div>
+            <div className={AppStyles.copyright}>
+              "金宝贝(天津)教育信息咨询有限公司上海分公司"<br/>
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402005955">
+                <img className={AppStyles.ig} src={ig}/>"泸工网安备  31010402005955号"
+              </a>
+              <span className={AppStyles.j}>泸ICP备12016779号-9</span>
+            </div>
+          </div>
         </div>
       </BrowserRouter>
   );
