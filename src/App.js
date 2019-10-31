@@ -23,49 +23,45 @@ function App() {
       title: '关于我们',
       content: [
         {
-          text: '全球网络',
-          url: 'www.baidu.com'
-        },
-        {
           text: '品牌介绍',
           url: 'www.baidu.com'
         },
         {
           text: '课程介绍',
+          url: 'www.baidu.com'
+        },
+        {
+          text: '指导老师',
+          url: 'www.baidu.com'
+        },
+        {
+          text: '教室教具',
           url: 'www.baidu.com'
         }
       ]
     },
     {
-      title: '关于我们',
+      title: '联系我们',
       content: [
         {
-          text: '全球网络',
+          text: '加盟合作',
           url: 'www.baidu.com'
         },
         {
-          text: '品牌介绍',
-          url: 'www.baidu.com'
-        },
-        {
-          text: '课程介绍',
+          text: '工作机会',
           url: 'www.baidu.com'
         }
       ]
     },
     {
-      title: '关于我们',
+      title: '用户须知',
       content: [
         {
-          text: '全球网络',
+          text: '隐私协议',
           url: 'www.baidu.com'
         },
         {
-          text: '品牌介绍',
-          url: 'www.baidu.com'
-        },
-        {
-          text: '课程介绍',
+          text: '中心查询',
           url: 'www.baidu.com'
         }
       ]
@@ -116,9 +112,15 @@ function App() {
                   </dl>
                 ))
               }
-
             </div>
-            <div className={AppStyles.footerRight}>二维码</div>
+            <div className={AppStyles.footerRight}>
+              <img src={codea}/>
+              <span>官方微信订阅号</span>
+            </div>
+            <div className={AppStyles.footerteltex}>
+              <span>客服热线</span><br/>
+              021-5456 9020
+            </div>
           </div>
         </div>
       </BrowserRouter>

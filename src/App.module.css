@@ -100,6 +100,20 @@
 
 .footerLeft {
     display: flex;
+    margin-left: 100px;
+}
+.footerRight span{
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 10px;
+}
+.footerteltex{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 50px;
+    padding-top: 20px;
 }
 
 .crItem {
