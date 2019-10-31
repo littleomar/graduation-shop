@@ -38,7 +38,7 @@
 
 .contentdata{
   width: 1000px;
-  height: 400px;
+  height: 500px;
   background-color: #ffffff;
   margin-top: 3px;
   margin-left: 130px;
@@ -51,4 +51,24 @@
   color: #76b2d3;
   margin-left: 300px;
   margin-right: auto;
+}
+.footcontent{
+    width:500px;
+    height: 230px;
+    margin-top: 3px;
+    margin-left: 130px;
+    margin-right: auto;
+    position: relative;
+    border-radius: 15px;
+}
+.footleft{
+    float: left;
+}
+.footimg{
+    height: 200px;
+    width: 300px;
+    margin: 20px 0px 0px 20px;
+}
+.footright{
+    float: right;
 }
