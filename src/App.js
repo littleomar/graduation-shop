@@ -1,12 +1,13 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import { Layout, Menu } from 'antd';
-import { Route, Link, BrowserRouter, Switch } from 'react-router-dom'
+import { Route, Link, BrowserRouter, Switch, Index } from 'react-router-dom'
 
 import InBox from './comp/Content/message.js'
 import About from './comp/Content/about.js'
 import MyHeader from "./comp/Header/index.js";
 // import InBox from "./comp/Content/inbox.js";
+import Course from './comp/course/content';
 import AppStyles from './App.module.css'
 import logoImg from './statics/logo.png';
 import codea from './statics/footer_code1.jpg';
@@ -73,7 +74,7 @@ function App() {
           <Header className={AppStyles.header}>
             <Menu
               mode="horizontal"
-              defaultSelectedKeys={['2']}
+              defaultSelectedKeys={['1']}
               style={{ lineHeight: '64px' }}
             >
               <Menu.Item className={AppStyles.menuItem2}>
@@ -81,18 +82,37 @@ function App() {
                   <img className={AppStyles.logoImg} src={logoImg} alt="aaa"/>
                 </div>
               </Menu.Item>
-              <Menu.Item key="1" className={AppStyles.menuItem1}><Link to='/'>nav 1</Link></Menu.Item>
-              <Menu.Item key="2"><Link to='/about'>about</Link></Menu.Item>
-              <Menu.Item key="3"><Link to='/inbox'>首页</Link></Menu.Item>
+              <Menu.Item key="1" className={AppStyles.menuItem1}><Link to='/'>首页</Link></Menu.Item>
+              <Menu.Item key="2"><Link to='/about'>品牌介绍</Link></Menu.Item>
+              <Menu.Item key="3"><Link to='/inbox'>课程介绍</Link></Menu.Item>
+              <Menu.Item key="4"><Link to='/teacher'>指导老师</Link></Menu.Item>
+              <Menu.Item key="5"><Link to='/environment'>学习环境</Link></Menu.Item>
+              <Menu.Item key="6"><Link to='/class'>教室教具</Link></Menu.Item>
+              <Menu.Item key="7"><Link to='/query'>中心查询</Link></Menu.Item>
             </Menu>
           </Header>
           <Content className={AppStyles.content}>
             <Switch>
+              <Route exact path="/">
+                <InBox />
+              </Route>
               <Route path="/about">
                 <MyHeader />
               </Route>
               <Route path="/inbox">
-                <InBox />
+                <Course />
+              </Route>
+              <Route path="/teacher">
+                <div>wdwadawdw</div>
+              </Route>
+              <Route path="/environment">
+                <div>dwadwderre</div>
+              </Route>
+              <Route path="/class">
+                <div>1111</div>
+              </Route>
+              <Route path="/query">
+                <div>2222</div>
               </Route>
             </Switch>
           </Content>
