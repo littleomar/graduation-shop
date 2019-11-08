@@ -61,6 +61,18 @@ router.get('/shape', async(ctx, next) => {
   await next();
 });
 
+router.get('/tabTitle', async(ctx, next) => {
+  const tabTitleDB = await getTable('tabTitle');
+  let tabTitleArr = [];
+  (await tabTitleDB.db.find({}).toArray()).map((item) => {
+    const { _id, ...foo } = item;
+    tabTitleArr.push(foo);
+  });
+  ctx.body = tabTitleArr;
+  tabTitleDB.client.close();
+  await next();
+});
+
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(8000);
