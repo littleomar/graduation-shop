@@ -14,7 +14,7 @@
       "host": "ccimm.top",
       "repo": "git@github.com:littleomar/graduation-shop.git",
       "ref": "origin/index",
-      "path": "/home/graduation-shop/",
+      "path": "/home/graduation-shop",
       "post-deploy": "yarn install && yarn run start && pm2 startOrRestart ecosystem.json --env production"
     }
   }
