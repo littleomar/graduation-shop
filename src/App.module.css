@@ -24,7 +24,7 @@
   left: 0;
   width: 186px;
   height: 80px;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
 }
 .logoImg {
@@ -32,7 +32,99 @@
   height: 80px;
 }
 .content {
-  width: 1180px;
+  width: 1250px;
   margin: 0 auto;
   margin-top: 64px;
+}
+.footer{
+    background: url("./statics/footer.png") no-repeat #7fb7de;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #fff;
+    height: 260px;
+}
+.footer ul{
+  list-style: none;
+}
+.footer ul li{
+  float: left;
+}
+.main_width{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.sub{
+  width:680px;
+  float: left;
+}
+.sub ul{
+    padding-right: 20px;
+    width: 220px;
+    height: 100px;
+}
+.codea{
+  text-align: center;
+  width: 120px;
+  float: left;
+}
+.codee{
+  text-align: center;
+  width: 120px;
+  float: right;
+}
+.copyright{
+    width: 1000px;
+    display: block;
+    clear: both;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+}
+.ig{
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+}
+.j{
+    padding-left: 15px;
+}
+
+.footerWrapper {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLeft {
+    display: flex;
+    margin-left: 100px;
+}
+.footerRight span{
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 10px;
+}
+.footerteltex{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 50px;
+    padding-top: 20px;
+}
+
+.crItem {
+    width: 200px;
+}
+
+.crTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.crText {
+    cursor: pointer;
 }

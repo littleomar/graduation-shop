@@ -1,3 +1,87 @@
-.myHeader {
-  color: red;
+.population {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+}
+.main{
+  display: block;
+  height: 260px;
+  background-color: white;
+  width: 1000px;
+  margin-top: 10px;
+  margin-left: 130px;
+  margin-right: auto;
+  position: relative;
+  border-radius: 15px;
+}
+.maintitle{
+  height: 250px;
+  width: 260px;
+  float: left;
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  color: #76b2d3;
+}
+.mainimg{
+  height: 240px;
+  width: 260px;
+}
+.maintext{
+    font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  padding: 60px 40px 40px 40px;
+}
+
+.contentdata{
+  width: 1000px;
+  height: 500px;
+  background-color: #ffffff;
+  margin-top: 3px;
+  margin-left: 130px;
+  margin-right: auto;
+  position: relative;
+  border-radius: 15px;
+}
+.contenttext{
+  font-size: 40px;
+  color: #76b2d3;
+  margin-left: 300px;
+  margin-right: auto;
+}
+.footcontent{
+    width:1000px;
+    height: 230px;
+    margin-top: 3px;
+    margin-left: 130px;
+    margin-right: auto;
+    position: relative;
+    border-radius: 15px;
+}
+.footleft{
+    float: left;
+    height: 230px;
+    width: 500px;
+}
+.footimg{
+    height: 200px;
+    width: 300px;
+    margin: 20px 0px 0px 100px;
+}
+.footright{
+    float: right;
+    width: 500px;
+    height: 230px;
+}
+.foottext{
+    float: right;
+    font-size: 16px;
+    text-align: left;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-right: 50px;
+    padding-right: 50px;
 }
