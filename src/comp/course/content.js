@@ -12,12 +12,20 @@ class content extends React.Component {
     this.state = {
       tabTitle: [],
     };
+    this.state ={
+      tabContent: [],
+    };
   }//初始化数据，后台赋值
   async componentDidMount() {
     this.setState({
       tabTitle: (await axios.get(`http://ccimm.top:8000/tabTitle`)).data,//请求接口数据
     })
+    this.setState({
+      tabContent: (await axios.get(`http://ccimm.top:8000/tabContent`)).data,
+    })
   }
+
+
 
   render() {
     return (
@@ -27,10 +35,7 @@ class content extends React.Component {
         <div className={styles.tab}>
           {
             this.state.tabTitle.map(item =>
-              <div>
-                <div className={styles.tabtext}>{item.cnName}</div>
-                <div className={styles.tabtext}>{item.cnName}</div>
-              </div>
+                <div className={styles.tabtext}>{item.cnName}<br/>{item.enName}</div>
             )
           }
         </div>
