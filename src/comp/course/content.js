@@ -11,18 +11,16 @@ class content extends React.Component {
     super();
     this.state = {
       tabTitle: [],
-    };
-    this.state ={
       tabContent: [],
     };
   }//初始化数据，后台赋值
   async componentDidMount() {
     this.setState({
       tabTitle: (await axios.get(`http://ccimm.top:8000/tabTitle`)).data,//请求接口数据
-    })
-    this.setState({
       tabContent: (await axios.get(`http://ccimm.top:8000/tabContent`)).data,
-    })
+    });
+ console.log(this.state.tabTitle);
+    console.log(this.state.Content);
   }
 
 
@@ -40,10 +38,29 @@ class content extends React.Component {
           }
         </div>
         <div className={styles.tabcontent}>
-          <div className={styles.tabcontenttop}>育乐 Play</div>
-          <div className={styles.tabcontentlefta}></div>
-          <div className={styles.tabcontentleftb}></div>
-          <div className={styles.tabcontentright}></div>
+          {
+            this.state.tabContent.map(item =>
+              <div className={styles.tabcontenttop}>{item.tabTop}</div>
+            )
+          }
+          <div className={styles.tabcontentlefta}>
+            { this.state.tabContent.map(item =>
+                <div className={styles.tabcontenttop}>{item.tabLefta}</div>
+            )
+            }
+          </div>
+          <div className={styles.tabcontentleftb}>
+            { this.state.tabContent.map(item =>
+              <div className={styles.tabcontenttop}>{item.tabLeftb}</div>
+            )
+            }
+          </div>
+          <div className={styles.tabcontentright}>
+            { this.state.tabContent.map(item =>
+              <div className={styles.tabcontenttop}>{item.tabRight}</div>
+            )
+            }
+          </div>
         </div>
       </div>
     );
