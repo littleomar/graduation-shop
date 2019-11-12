@@ -1,0 +1,164 @@
+.all{
+    width: 1200px;
+    height: 4200px;
+    position: relative;
+}
+.head{
+    width: 1200px;
+    height: 260px;
+    text-align: center;
+    margin: 0 30px;
+    padding-top:7px ;
+}
+.title{
+    width: 650px;
+    height: 55px;
+    font-size: 30px;
+    color: #76b2d3;
+    margin:0 auto;
+    padding-left: 100px;
+}
+.titext{
+    width: 750px;
+    height: 50px;
+    font-size: 18px;
+    color: #76b2d3;
+    margin:0 auto;
+    padding-left: 100px;
+}
+.contentlefta{
+    width: 400px;
+    height: 370px;
+    float: left;
+}
+.contenttop{
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 15px;
+    width: 780px;
+    height: 50px;
+    float: left;
+ }
+.contentleftb{
+    margin-left: 35px;
+    margin-top: 25px;
+    width: 350px;
+    height: 100px;
+    float: left;
+}
+.contentleftc{
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 350px;
+    height: 100px;
+    float: left;
+}
+.contentleftd1{
+    margin-left: 100px;
+    width: 300px;
+    height: 170px;
+    float: left;
+}
+.contentleftd2{
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 400px;
+    height: 170px;
+    float: left;
+}
+.ctall{
+    width: 1200px;
+    height: 750px;
+    float: left;
+}
+.cttop1{
+     width: 350px;
+     height: 50px;
+     font-size: 26px;
+     color: #76b2d3;
+     margin: 0 auto;
+ }
+.cttop2{
+    width: 1000px;
+    height: 80px;
+    font-size: 18px;
+    float: left;
+    color: #76b2d3;
+    text-align: center;
+}
+.cttop3{
+    width: 200px;
+    height: 800px;
+    float: right;
+}
+.cttop3 img{
+    margin-bottom: 85px;
+    width: 180px;
+    height: 180px;
+}
+.ctcontent{
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 700px;
+}
+.styall{
+    margin: 10px 5px;
+}
+.styc{
+
+}
+.stya{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 180, 40);
+    color: rgb(0, 0, 0);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(254, 254, 254);
+}
+.styb{
+    padding: 15px;
+    margin: -8px -8px 4px 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 180, 40);
+    color: inherit;
+    background-color: rgb(255, 180, 40);
+}
+.stytitle{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 180, 40);
+    line-height: 1.5em;
+    text-indent: 0em;
+    margin-bottom: 10px;
+}
+.stytitletext{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 180, 40);
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    text-indent: 2em;
+}
+.styalltext{
+    color: inherit;
+    text-align: justify;
+    font-size: 14px;
+}
+.styimg{
+    text-align: center;
+}
+.styfoot{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 180, 40);
+    line-height: 1.5em;
+    text-indent: 0em;
+    margin-bottom: 10px;
+}
+.styfoottext{
+    color: inherit;
+    text-align: justify;
+    font-size: 18px;
+}

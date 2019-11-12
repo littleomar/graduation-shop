@@ -8,6 +8,7 @@ import About from './comp/Content/about.js'
 import MyHeader from "./comp/Header/index.js";
 // import InBox from "./comp/Content/inbox.js";
 import Course from './comp/course/content';
+import Tea from './comp/Teacher/index.js';
 import AppStyles from './App.module.css'
 import logoImg from './statics/logo.png';
 import codea from './statics/footer_code1.jpg';
@@ -103,7 +104,7 @@ function App() {
                 <Course />
               </Route>
               <Route path="/teacher">
-                <div>wdwadawdw</div>
+                <Tea />
               </Route>
               <Route path="/environment">
                 <div>dwadwderre</div>
