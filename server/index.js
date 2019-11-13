@@ -85,6 +85,18 @@ router.get('/tabContent', async(ctx, next) => {
   await next();
 });
 
+router.get('/brandContent', async(ctx, next) => {
+  const brandContentDB = await getTable('brandContent');
+  let brandContentArr = [];
+  (await brandContentDB.db.find({}).toArray()).map((item) => {
+    const { _id, ...foo } = item;
+    brandContentArr.push(foo);
+  });
+  ctx.body = brandContentArr;
+  brandContentDB.client.close();
+  await next();
+});
+
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(8000);

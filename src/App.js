@@ -6,7 +6,7 @@ import { Route, Link, BrowserRouter, Switch, Index } from 'react-router-dom'
 import InBox from './comp/Content/message.js'
 import About from './comp/Content/about.js'
 import MyHeader from "./comp/Header/index.js";
-// import InBox from "./comp/Content/inbox.js";
+import InBoxa from "./comp/Content/inbox.js";
 import Course from './comp/course/content';
 import Tea from './comp/Teacher/index.js';
 import AppStyles from './App.module.css'
@@ -106,7 +106,7 @@ function App() {
                 <Tea />
               </Route>
               <Route path="/class">
-                <div>1111</div>
+                <InBoxa />
               </Route>
               <Route path="/query">
                 <div>2222</div>
