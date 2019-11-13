@@ -87,9 +87,8 @@ function App() {
               <Menu.Item key="2"><Link to='/about'>品牌介绍</Link></Menu.Item>
               <Menu.Item key="3"><Link to='/inbox'>课程介绍</Link></Menu.Item>
               <Menu.Item key="4"><Link to='/teacher'>指导老师</Link></Menu.Item>
-              <Menu.Item key="5"><Link to='/environment'>学习环境</Link></Menu.Item>
-              <Menu.Item key="6"><Link to='/class'>教室教具</Link></Menu.Item>
-              <Menu.Item key="7"><Link to='/query'>中心♥查询</Link></Menu.Item>
+              <Menu.Item key="5"><Link to='/class'>教室教具</Link></Menu.Item>
+              <Menu.Item key="6"><Link to='/query'>中心♥查询</Link></Menu.Item>
             </Menu>
           </Header>
           <Content className={AppStyles.content}>
@@ -105,9 +104,6 @@ function App() {
               </Route>
               <Route path="/teacher">
                 <Tea />
-              </Route>
-              <Route path="/environment">
-                <div>dwadwderre</div>
               </Route>
               <Route path="/class">
                 <div>1111</div>
