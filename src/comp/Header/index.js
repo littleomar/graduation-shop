@@ -42,31 +42,30 @@ const steps = [
 ];
 
 class Index extends React.Component  {
-  /*constructor() {
-    super();
-    this.state = {
-      brandContent: [],
-    };
-  }
-  async componentDidMount() {
-    this.setState({
-      brandContent: (await axios.get(`http://ccimm.top:8000/brandContent`)).data,
-    })
-  }*/
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     brandContent: [],
+  //   };
+  // }
+  // async componentDidMount() {
+  //   this.setState({
+  //     brandContent: (await axios.get(`http://ccimm.top:8000/brandContent`)).data,
+  //   })
+  // }
   constructor(props) {
     super(props);
     this.state = {
       current: 0,
-      brandContent: [],
+      brandContent: [{}],
     };
   }
   async componentDidMount() {
     this.setState({
       brandContent: (await axios.get(`http://ccimm.top:8000/brandContent`)).data,
-    })
+    });
   }
   onChange = current => {
-    console.log('onChange:', current);
     this.setState({ current });
   };
   next() {
@@ -108,10 +107,10 @@ class Index extends React.Component  {
           </Steps>
           <div className="steps-content">
             <div className={styles.contentformat}>
-              <div className={styles.contentformatimg}><img src={q} /></div>
-              <div className={styles.contentformattitle}>{steps[current].title}</div>
-              <div className={styles.contentformattext}>{steps[current].content}</div>
-              <div className={styles.contentformatimg2}>{steps[current].img}</div>
+              <div className={styles.contentformatimg}><img src={this.state.brandContent[current].imgLeft} /></div>
+              <div className={styles.contentformattitle}>{this.state.brandContent[current].tiTle}</div>
+              <div className={styles.contentformattext}>{this.state.brandContent[current].text}</div>
+              <div className={styles.contentformatimg2}><img src={this.state.brandContent[current].imgRight} alt=""/></div>
             </div>
           </div>
           <div className="steps-action">

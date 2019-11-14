@@ -12,6 +12,7 @@ class content extends React.Component {
     this.state = {
       tabTitle: [],
       tabContent: [],
+      showContent: {}
     };
   }//初始化数据，后台赋值
   async componentDidMount() {
@@ -19,8 +20,11 @@ class content extends React.Component {
       tabTitle: (await axios.get(`http://ccimm.top:8000/tabTitle`)).data,//请求接口数据
       tabContent: (await axios.get(`http://ccimm.top:8000/tabContent`)).data,
     });
- console.log(this.state.tabTitle);
-    console.log(this.state.Content);
+
+    this.setState({
+      showContent: this.state.tabContent[0]
+    })
+
   }
 
 
@@ -32,34 +36,21 @@ class content extends React.Component {
         <div className={styles.tittle}>多元化成长课程体系</div>
         <div className={styles.tab}>
           {
-            this.state.tabTitle.map(item =>
-                <div className={styles.tabtext}>{item.cnName}<br/>{item.enName}</div>
+            this.state.tabTitle.map((item, index) =>
+                <div className={styles.tabtext} onClick={() => {this.setState({showContent: this.state.tabContent[index]})}}>{item.cnName}<br/>{item.enName}</div>
             )
           }
         </div>
         <div className={styles.tabcontent}>
-          {
-            this.state.tabContent.map(item =>
-              <div className={styles.tabcontenttop}>{item.tabTop}</div>
-            )
-          }
+          <div className={styles.tabcontenttop}>{this.state.showContent.tabTop}</div>
           <div className={styles.tabcontentlefta}>
-            { this.state.tabContent.map(item =>
-                <div className={styles.tabcontenttop}>{item.tabLefta}</div>
-            )
-            }
+            <div className={styles.tabcontenttop}>{this.state.showContent.tabLefta}</div>
           </div>
           <div className={styles.tabcontentleftb}>
-            { this.state.tabContent.map(item =>
-              <div className={styles.tabcontenttop}>{item.tabLeftb}</div>
-            )
-            }
+            <div className={styles.tabcontenttop}>{this.state.showContent.tabLeftb}</div>
           </div>
           <div className={styles.tabcontentright}>
-            { this.state.tabContent.map(item =>
-              <div className={styles.tabcontenttop}>{item.tabRight}</div>
-            )
-            }
+            <div className={styles.tabcontenttop}>{this.state.showContent.tabRight}</div>
           </div>
         </div>
       </div>
