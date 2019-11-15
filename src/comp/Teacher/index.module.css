@@ -31,26 +31,20 @@
     height: 370px;
     float: left;
 }
-.contenttop{
-    margin-top: 5px;
-    margin-left: 15px;
-    font-size: 15px;
-    width: 780px;
-    height: 50px;
-    float: left;
- }
 .contentleftb{
+    font-size: 15px;
     margin-left: 35px;
     margin-top: 25px;
     width: 350px;
-    height: 100px;
+    height: 140px;
     float: left;
 }
 .contentleftc{
+    font-size: 15px;
     margin-left: 40px;
     margin-top: 25px;
     width: 350px;
-    height: 100px;
+    height: 140px;
     float: left;
 }
 .contentleftd1{

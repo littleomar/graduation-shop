@@ -11,9 +11,22 @@ import play from '../../statics/zdlsPlay.png';
 import music from '../../statics/zdlsmusic.PNG';
 import l7 from '../../statics/zdlsL7.PNG';
 import foot from '../../statics/zdlsfoot.PNG';
+import axios from "axios";
 
 
 class index extends React.Component{
+  constructor() {
+    super();
+    this.state = {
+      teacherContent: [],
+    };
+  }//初始化数据，后台赋值
+  async componentDidMount() {
+    this.setState({
+      teacherContent: (await axios.get(`http://ccimm.top:8000/teacherContent`)).data,
+    });
+    console.log(this.state.teacherContent)
+  }
   render() {
     return (
       <Fragment>
@@ -22,10 +35,6 @@ class index extends React.Component{
           <div className={styles.title}>您熟悉的金宝贝老师—carry老师蜕变记</div>
           <div className={styles.titext}>2015加入金宝贝 2016上海总部基础培训 从此开启了她在金宝贝的职业生涯！</div>
           <div className={styles.contentlefta}><img src={t}/></div>
-          <div className={styles.contenttop}>
-              还记得Carry刚刚走上工作岗位时候的青涩，只要她没有课，她就会出现在各个教室的角落里，
-              静静地听课认真地笔记。那时侯朋友圈里时常会发一些偷拍Carry老师加班备课到很晚的小视频，有时候小视频里Carry自己一个人在教室里自说自话
-              ，模拟互动，有时候小视频里是Carry跟其他老师交流讨论，表情严肃认真。</div>
           <div className={styles.contentleftb}>
               她是位特别爱笑，喜欢孩子，有爱心，有耐心，有责任心，温柔善良的老师，
               她会把每个孩子放在心上，经常和家长沟通育儿，深受小朋友和家长的喜爱。

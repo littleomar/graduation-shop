@@ -1,6 +1,6 @@
 .all{
     width: 1200px;
-    height: 850px;
+    height: 900px;
     position: relative;
 }
 .head{
@@ -35,8 +35,8 @@
     cursor: pointer;
     color: white;
 }
-.tabtext.active{
-    background-color: #76b2d3;
+.tabtext:hover {
+    background-color: #1fbbdd;;
 }
 .tab-text-cn {
     font-size: 14px;
@@ -52,34 +52,53 @@
 }
 .tabcontent{
     width: 1200px;
-    height: 400px;
+    height: 430px;
     margin: 0 30px;
     border-radius: 15px;
     background-color: white;
 }
 .tabcontenttop{
-    width: 400px;
-    height: 70px;
+    width: 500px;
+    height: 60px;
     float: top;
-    font-size: 20px;
-    margin: 0 auto;
-    color: #76b2d3;
+    padding-left: 100px;
+    font-size: 28px;
+   font-weight: bolder;
 }
 .tabcontentlefta{
-    width: 370px;
-    height: 320px;
+    width: 380px;
+    height: 360px;
     float: left;
-    background-color: red;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .tabcontentright{
-    width: 370px;
-    height: 320px;
+    width: 380px;
+    height: 360px;
     float: left;
-    background-color: greenyellow;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .tabcontentleftb{
     width: 420px;
     height: 320px;
     float: left;
+    text-align: left;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: white;
+}
+.tabcontenttta{
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+}
+.tabcontentttb{
+    text-indent: 2em;
+    font-size: 16px;
+    color: #6e7477;
 }

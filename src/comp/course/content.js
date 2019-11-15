@@ -42,15 +42,16 @@ class content extends React.Component {
           }
         </div>
         <div className={styles.tabcontent}>
-          <div className={styles.tabcontenttop}>{this.state.showContent.tabTop}</div>
+          <div className={styles.tabcontenttop}><img src={this.state.showContent.ico}/>{this.state.showContent.tabTop}</div>
           <div className={styles.tabcontentlefta}>
-            <div className={styles.tabcontenttop}>{this.state.showContent.tabLefta}</div>
+            <img src={this.state.showContent.tabLefta}/>
           </div>
           <div className={styles.tabcontentleftb}>
-            <div className={styles.tabcontenttop}>{this.state.showContent.tabLeftb}</div>
+            <div className={styles.tabcontenttta}>{this.state.showContent.tabText}</div>
+            <div className={styles.tabcontentttb}>{this.state.showContent.tabLeftb}</div>
           </div>
           <div className={styles.tabcontentright}>
-            <div className={styles.tabcontenttop}>{this.state.showContent.tabRight}</div>
+            <img src={this.state.showContent.tabRight}/>
           </div>
         </div>
       </div>
