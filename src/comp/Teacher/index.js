@@ -25,7 +25,6 @@ class index extends React.Component{
     this.setState({
       teacherContent: (await axios.get(`http://ccimm.top:8000/teacherContent`)).data,
     });
-    console.log(this.state.teacherContent)
   }
   render() {
     return (

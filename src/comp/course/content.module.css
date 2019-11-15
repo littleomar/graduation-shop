@@ -1,6 +1,6 @@
 .all{
     width: 1200px;
-    height: 900px;
+    height: 1340px;
     position: relative;
 }
 .head{
@@ -101,4 +101,91 @@
     text-indent: 2em;
     font-size: 16px;
     color: #6e7477;
+}
+.Ftitle{
+    width: 300px;
+    height: 60px;
+    font-size: 34px;
+    color: #76b2d3;
+    margin:0 auto;
+    padding-left: 50px;
+}
+.Ftext{
+    width: 1200px;
+    height: 40px;
+    font-size: 16px;
+    color: #6e7477;
+    margin-left: 100px;
+}
+.Folded{
+  margin-left: 80px;
+}
+.Foldedtext{
+    font-size: 16px;
+}
+.Foldedtexta1{
+    color: #db0001;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.Foldedtexta2{
+    margin-left: 30px;
+    color: white;
+    font-weight: bolder;
+    background-color: #db0001;
+}
+.Foldedtextb1{
+    color: #f36a00;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.Foldedtextb2{
+    margin-left: 30px;
+    color: white;
+    font-weight: bolder;
+    background-color: #f36a00;
+}
+.Foldedtextc1{
+    color: #f5bb36;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.Foldedtextc2{
+    margin-left: 30px;
+    color: white;
+    font-weight: bolder;
+    background-color: #f5bb36;
+}
+.Foldedtextd1{
+    color: #619744;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.Foldedtextd2{
+    margin-left: 30px;
+    color: white;
+    font-weight: bolder;
+    background-color: #619744;
+}
+.Foldedtexte1{
+    color: #0090b5;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.Foldedtexte2{
+    margin-left: 30px;
+    color: white;
+    font-weight: bolder;
+    background-color: #0090b5;
+}
+.Foldedtextf1{
+    color: #004c7e;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.Foldedtextf2{
+    margin-left: 30px;
+    color: white;
+    font-weight: bolder;
+    background-color: #004c7e;
 }
