@@ -87,14 +87,21 @@ class Index extends React.Component  {
       <div className={styles.main}>
         <div className={styles.maintitle}>
           世界的金宝贝
-          <img  className={styles.mainimg} src={xc}/>
+        </div>
+        <div className={styles.mainimg}>
+          {
+            this.state.brandContent.map(item =>(
+              <img src={item.banner}/>
+            ))
+          }
         </div>
         <div className={styles.maintext}>
-                <span>
-                   金宝贝成立于1976年，已经发展成为儿童成长方式引导者，涵盖早教课程、家庭教育和游戏玩乐。
-                   金宝贝倡导人本和科学的育儿观，坚持Follow kids lead，践行3S育儿发展理念，
-                   指导父母跟随孩子的步伐，共同成长
-                </span>
+          <ul>
+            <li><span>40+ 年</span><br/><span className={styles.litext}>创建于1976</span></li>
+            <li><span>40+ 国家</span><br/><span className={styles.litext}>遍及全球40多国家</span></li>
+            <li><span>800+ 中心</span><br/><span className={styles.litext}>全球超过800多家</span></li>
+            <li><span>100+ 万家庭</span><br/><span className={styles.litext}>服务数万户家庭</span></li>
+          </ul>
         </div>
       </div>
       <div className={styles.contentdata}>
