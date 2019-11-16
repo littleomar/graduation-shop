@@ -1,7 +1,5 @@
 import React, {Fragment} from 'react';
 import styles from './index.module.css';
-import banner from '../../statics/zdbanner.png';
-import t from '../../statics/zdlst.jpeg.png';
 import t1 from '../../statics/zdlsintroduce1.png';
 import t2 from '../../statics/zdlsintroduce2.png';
 import t3 from '../../statics/zdlsintroduce3.png';
@@ -30,22 +28,45 @@ class index extends React.Component{
     return (
       <Fragment>
         <div className={styles.all}>
-          <div className={styles.head}><img src={banner} /></div>
+          <div className={styles.head}>
+            {this.state.teacherContent.map(item =>(
+              <img src={item.banner}/>
+              ))}
+          </div>
           <div className={styles.title}>您熟悉的金宝贝老师—carry老师蜕变记</div>
           <div className={styles.titext}>2015加入金宝贝 2016上海总部基础培训 从此开启了她在金宝贝的职业生涯！</div>
-          <div className={styles.contentlefta}><img src={t}/></div>
+          <div className={styles.contentlefta}>
+            {this.state.teacherContent.map(item =>(
+              <img src={item.head}/>
+            ))}
+          </div>
           <div className={styles.contentleftb}>
-              她是位特别爱笑，喜欢孩子，有爱心，有耐心，有责任心，温柔善良的老师，
-              她会把每个孩子放在心上，经常和家长沟通育儿，深受小朋友和家长的喜爱。
-              2016、2017、2018连续3年荣获最受欢迎指导师。
+              {
+                this.state.teacherContent.map(item =>(
+                  <div>{item.texta}</div>
+                ))
+              }
           </div>
           <div className={styles.contentleftc}>
-             同时她也是一位非常认真努力的姑娘！
-             通过她自己平时的努力， 2017连获2门上海总部leading证书！成为实力过硬的资深指导师！
-             你奋斗的样子最美丽！Carry！
+            {
+              this.state.teacherContent.map(item =>(
+                <div>{item.textb}</div>
+              ))
+            }
           </div>
-          <div className={styles.contentleftd1}><img src={t1}/></div>
-          <div className={styles.contentleftd2}><img src={t2}/><img src={t3}/></div>
+          <div className={styles.contentleftd1}>
+            {this.state.teacherContent.map(item =>(
+              <img src={item.textaimg}/>
+            ))}
+          </div>
+          <div className={styles.contentleftd2}>
+            {this.state.teacherContent.map(item =>(
+              <div>
+                <img src={item.textbimg}/>
+                <img src={item.textcimg}/>
+              </div>
+            ))}
+          </div>
           <div className={styles.ctall}>
               <div className={styles.cttop1}>接下来谈谈Carry老师的课程:</div>
               <div className={styles.cttop2}>

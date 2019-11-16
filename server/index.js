@@ -109,6 +109,18 @@ router.get('/teacherContent', async(ctx, next) => {
   await next();
 });
 
+router.get('/classContent', async(ctx, next) => {
+  const classContentDB = await getTable('classContent');
+  let classContentArr = [];
+  (await classContentDB.db.find({}).toArray()).map((item) => {
+    const { _id, ...foo } = item;
+    classContentArr.push(foo);
+  });
+  ctx.body = classContentArr;
+  classContentDB.client.close();
+  await next();
+});
+
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(8000);

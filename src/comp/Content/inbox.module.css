@@ -1,0 +1,12 @@
+.all{
+    width: 1200px;
+    height: 1340px;
+    position: relative;
+}
+.head{
+    width: 1200px;
+    height: 260px;
+    text-align: center;
+    margin: 0 30px;
+    padding-top:7px ;
+}
