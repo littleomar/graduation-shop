@@ -1,9 +1,13 @@
 import React from "react";
 import style from './inbox.module.css';
 import axios from "axios";
-import MessageStyles from "./message.module.css";
+import { Popover, Button } from 'antd';
 
-
+const content = (
+  <div>
+    <p>Content</p>
+  </div>
+);
 
 class InBox extends React.Component {
   constructor() {
@@ -34,28 +38,25 @@ class InBox extends React.Component {
         <div className={style.aids}>
 
         </div>
-        <div className={style.footall}>
-          <div className={style.footcontent}>
-              <div className={style.foottitle}>
-                育乐教室
-                <br/>
-                Recreational classroom
-              </div>
-            <div className={style.footWrapper}>
+            <div className={style.footall}>
               {
-                this.state.classContent.map(item => (
+                this.state.classContent.map(item =>(
+                  <div className={style.footcontent}>
+                    <div className={style.foottitle}>{item.title}</div>
+                    <div className={style.foottitle}>{item.titleb}</div>
                   <div className={style.footimg}>
-                    <div>
-                      <img src={this.state.classContent.aImg}/>
-                      <img src={this.state.classContent.bImg}/>
-                      <img src={this.state.classContent.cImg}/>
-                    </div>
+                    <img src={item.aImg}/>
                   </div>
+                    <div className={style.footimg}>
+                      <img src={item.bImg}/>
+                    </div>
+                    <div className={style.footimg}>
+                      <img src={item.cImg}/>
+                    </div>
+                </div>
                 ))
               }
             </div>
-          </div>
-        </div>
       </div>
     );
   }
