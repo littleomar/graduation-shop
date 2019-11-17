@@ -88,7 +88,8 @@ function App() {
               <Menu.Item key="3"><Link to='/inbox'>课程介绍</Link></Menu.Item>
               <Menu.Item key="4"><Link to='/teacher'>指导老师</Link></Menu.Item>
               <Menu.Item key="5"><Link to='/class'>教室教具</Link></Menu.Item>
-              <Menu.Item key="6"><Link to='/query'>中心♥查询</Link></Menu.Item>
+              <Menu.Item key="6"><Link to='/query'>中心查询</Link></Menu.Item>
+              <Menu.Item key="7"><Link to='/win'>加盟合作</Link></Menu.Item>
             </Menu>
           </Header>
           <Content className={AppStyles.content}>
@@ -110,6 +111,9 @@ function App() {
               </Route>
               <Route path="/query">
                 <div>2222</div>
+              </Route>
+              <Route path="/win">
+                <div>2</div>
               </Route>
             </Switch>
           </Content>
