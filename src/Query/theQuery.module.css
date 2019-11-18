@@ -1,0 +1,55 @@
+.all{
+    height: 1000px;
+    width: 1300px;
+}
+.head{
+    width: 1300px;
+    height: 400px;
+    background-image: url("../statics/querybanner.png");
+}
+.headRight{
+    float: right;
+    width: 320px;
+    margin-right: 220px;
+    height: 340px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.headtitle{
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    background-color: #1890ff;
+}
+.region{
+    width: 210px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.headtext{
+    width: 60px;
+    font-size: 17px;
+    color: #888;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.headnameinput{
+    width: 210px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.b{
+    width: 150px;
+    height: 50px;
+    margin-left: 80px;
+}

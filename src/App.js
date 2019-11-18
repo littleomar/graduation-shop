@@ -112,7 +112,7 @@ function App() {
                 <InBoxa />
               </Route>
               <Route path="/query">
-                <div>1</div>
+                <Query />
               </Route>
               <Route path="/win">
                 <Win />
