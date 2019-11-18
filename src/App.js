@@ -9,7 +9,8 @@ import MyHeader from "./comp/Header/index.js";
 import InBoxa from "./comp/Content/inbox.js";
 import Course from './comp/course/content';
 import Tea from './comp/Teacher/index.js';
-import Win from './comp/';
+import Query from "./Query/theQuery.js";
+import Win from './cooperation/win.js';
 import AppStyles from './App.module.css'
 import logoImg from './statics/logo.png';
 import codea from './statics/footer_code1.jpg';
@@ -111,10 +112,10 @@ function App() {
                 <InBoxa />
               </Route>
               <Route path="/query">
-                <div>2222</div>
+                <div>1</div>
               </Route>
               <Route path="/win">
-                <div>2</div>
+                <Win />
               </Route>
             </Switch>
           </Content>

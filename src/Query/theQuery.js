@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './win.module.css';
+import style from './theQuery.module.css';
 
 
-class Win extends React.Component{
+class theQuery extends React.Component{
   render() {
     return(
       <div className={style.all}>
@@ -12,4 +12,4 @@ class Win extends React.Component{
   }
 }
 
-export default Win;
+export default theQuery;
