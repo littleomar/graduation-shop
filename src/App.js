@@ -28,19 +28,19 @@ function App() {
       content: [
         {
           text: '品牌介绍',
-          url: 'www.baidu.com'
+          url: 'http://localhost:3000/about'
         },
         {
           text: '课程介绍',
-          url: 'www.baidu.com'
+          url: 'http://localhost:3000/inbox'
         },
         {
           text: '指导老师',
-          url: 'www.baidu.com'
+          url: 'http://localhost:3000/teacher'
         },
         {
           text: '教室教具',
-          url: 'www.baidu.com'
+          url: 'http://localhost:3000/class'
         }
       ]
     },
@@ -49,11 +49,11 @@ function App() {
       content: [
         {
           text: '加盟合作',
-          url: 'www.baidu.com'
+          url: 'http://localhost:3000/win'
         },
         {
           text: '工作机会',
-          url: 'www.baidu.com'
+          url: '#'
         }
       ]
     },
@@ -62,11 +62,11 @@ function App() {
       content: [
         {
           text: '隐私协议',
-          url: 'www.baidu.com'
+          url: '#'
         },
         {
           text: '中心查询',
-          url: 'www.baidu.com'
+          url: 'http://localhost:3000/query'
         }
       ]
     }

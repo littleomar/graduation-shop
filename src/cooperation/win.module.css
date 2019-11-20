@@ -1,10 +1,4 @@
 .all{
-    height: 1000px;
-    width: 1200px;
-    margin: 0 auto;
-}
-.bb{
-    height: 200px;
     width: 800px;
-    background-color: #76b2d3;
+    margin: 0 auto;
 }

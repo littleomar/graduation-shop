@@ -4,7 +4,7 @@
 }
 .head{
     width: 1300px;
-    height: 400px;
+    height: 380px;
     background-image: url("../statics/querybanner.png");
 }
 .headRight{
@@ -52,4 +52,21 @@
     width: 150px;
     height: 50px;
     margin-left: 80px;
+}
+.content{
+    height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.contenttitle{
+    height: 30px;
+    width: 1200px;
+}
+.contentimg{
+    height: 300px;
+    width: 1100px;
+    margin: 0 auto;
+}
+.titlea{
+    color: #6e7477;
 }

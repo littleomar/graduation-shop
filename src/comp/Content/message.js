@@ -3,6 +3,8 @@ import { Carousel } from "antd";
 import axios from 'axios';//前端用于请求接口封装的包
 import MessageStyles from './message.module.css'
 import AppStyles from "../../App.module.css";
+import a from '../../statics/r2.png';
+import b from '../../statics/r3.png';
 
 class Message extends React.Component {
   constructor() {
@@ -35,9 +37,8 @@ class Message extends React.Component {
         </Carousel>
         <div className={MessageStyles.right_nav}>
           <ul className={MessageStyles.ule}>
-            <li className={MessageStyles.audition} />
-            <li className={MessageStyles.auditionb} />
-            <li className={MessageStyles.auditionc} />
+            <li className={MessageStyles.auditionb} ><a href='http://localhost:3000/query'><img src={a}/></a> </li>
+            <li className={MessageStyles.auditionc} ><a href='http://localhost:3000/inbox'><img src={b}/></a></li>
             <li className={MessageStyles.auditiond} />
           </ul>
         </div>

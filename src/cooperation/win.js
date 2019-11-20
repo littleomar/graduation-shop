@@ -1,83 +1,8 @@
 import React from 'react';
 import style from './win.module.css';
-import { Table, Divider, Tag } from 'antd';
+import { Table } from 'antd';
 import axios from "axios";
-
-
-
-const columns = [
-  {
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
-    render: text => <a>{text}</a>,
-  },
-  {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
-  },
-  {
-    title: 'Address',
-    dataIndex: 'address',
-    key: 'address',
-  },
-  {
-    title: 'Tags',
-    key: 'tags',
-    dataIndex: 'tags',
-    render: tags => (
-      <span>
-        {tags.map(tag => {
-          let color = tag.length > 5 ? 'geekblue' : 'green';
-          if (tag === 'loser') {
-            color = 'volcano';
-          }
-          return (
-            <Tag color={color} key={tag}>
-              {tag.toUpperCase()}
-            </Tag>
-          );
-        })}
-      </span>
-    ),
-  },
-  {
-    title: 'Action',
-    key: 'action',
-    render: (text, record) => (
-      <span>
-        <a>Invite {record.name}</a>
-        <Divider type="vertical" />
-        <a>Delete</a>
-      </span>
-    ),
-  },
-];
-
-const data = [
-  {
-    key: '1',
-    name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
-  },
-  {
-    key: '2',
-    name: 'Jim Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
-    tags: ['loser'],
-  },
-  {
-    key: '3',
-    name: 'Joe Black',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
-  },
-];
+import { Pagination } from 'antd';
 
 class Win extends React.Component{
   constructor() {
@@ -88,19 +13,23 @@ class Win extends React.Component{
   }
   async componentDidMount() {
     this.setState({
-      contentUser: (await axios.get(`http://ccimm.top:8000/user`)).data,
+      contentUser: (await axios.get(`http://ccimm.top:8000/contentUser`)).data,
     });
   }
 
   render() {
     return(
       <div className={style.all}>
-        <div><Table columns={columns} dataSource={data} /></div>
-        <div className={style.bb}>
-        </div>
+        <Table dataSource={this.state.contentUser}>
+          <Table.Column title="地址" dataIndex="address" />
+          <Table.Column title="宝宝昵称" dataIndex="name" />
+          <Table.Column title="家长电话" dataIndex="telphone"/>
+          <Table.Column title="宝贝生日" dataIndex="birthday"/>
+
+        </Table>
       </div>
     )
-  }
+}
 }
 
 export default Win;

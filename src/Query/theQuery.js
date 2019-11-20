@@ -7,6 +7,7 @@ import { Button } from 'antd';
 import locale from 'antd/es/date-picker/locale/zh_CN';
 import axios from 'axios';
 import moment from 'moment';
+import conbanner from '../statics/default_banner.jpg';
 import 'moment/locale/zh-cn';
 moment.locale('zh-cn');
 
@@ -413,9 +414,9 @@ class theQuery extends React.Component{
                 let res = '';
                 if (value.length === 2) {
                   res = optionsTable[value[0]].name + '/' + optionsTable[value[0]][value[1]];
-                } if (value.length === 1) {
+                } else if (value.length === 1) {
                   res = optionsTable[value[0]].name
-                } else {
+                } else{
                   return;
                 }
                 this.setState(preState => ({
@@ -474,6 +475,12 @@ class theQuery extends React.Component{
               }}>点击提交</Button>
             </div>
           </div>
+        </div>
+        <div className={style.content}>
+          <div className={style.contenttitle}>
+            <span className={style.titlea}>全国早教中心 ></span>
+          </div>
+          <div className={style.contentimg}><img src={conbanner}/></div>
         </div>
       </div>
     )

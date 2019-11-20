@@ -133,6 +133,18 @@ router.get('/contentUser', async(ctx, next) => {
   await next();
 });
 
+router.get('/queryContent', async(ctx, next) => {
+  const queryContentDB = await getTable('queryContent');
+  let queryContentArr = [];
+  (await queryContentDB.db.find({}).toArray()).map((item) => {
+    const { _id, ...foo } = item;
+    queryContentArr.push(foo);
+  });
+  ctx.body = queryContentArr;
+  queryContentDB.client.close();
+  await next();
+});
+
 
 router.post('/addUser', async (ctx, next) => {
   const classUserDB = await getTable('user');
