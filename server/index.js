@@ -122,9 +122,9 @@ router.get('/classContent', async(ctx, next) => {
 });
 
 router.post('/addUser', async (ctx, next) => {
-  const classUserDB = await getTable('classContent');
+  const classUserDB = await getTable('user');
   const res = await classUserDB.db.insertMany([ctx.request.body]);
-  ctx.body = {...res,...ctx.request.body};
+  ctx.body = {res};
   classUserDB.client.close();
   await next();
 });
