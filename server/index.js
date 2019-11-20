@@ -133,6 +133,18 @@ router.post('/addUser', async (ctx, next) => {
   await next();
 });
 
+router.get('/user', async(ctx, next) => {
+  const userDB = await getTable('user');
+  let userArr = [];
+  (await userDB.db.find({}).toArray()).map((item) => {
+    const { _id, ...foo } = item;
+    userArr.push(foo);
+  });
+  ctx.body = userArr;
+  userDB.client.close();
+  await next();
+});
+
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(8000);
