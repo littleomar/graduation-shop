@@ -83,12 +83,12 @@ class Win extends React.Component{
   constructor() {
     super();
     this.state = {
-      user: [],
+      contentUser: [],
     };
   }
   async componentDidMount() {
     this.setState({
-      user: (await axios.get(`http://ccimm.top:8000/user`)).data,
+      contentUser: (await axios.get(`http://ccimm.top:8000/user`)).data,
     });
   }
 
@@ -96,12 +96,7 @@ class Win extends React.Component{
     return(
       <div className={style.all}>
         <div><Table columns={columns} dataSource={data} /></div>
-        <div>
-          {
-            this.state.user.map(item =>(
-              <div>{item.name}</div>
-            ))
-          }
+        <div className={style.bb}>
         </div>
       </div>
     )

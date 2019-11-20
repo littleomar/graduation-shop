@@ -133,15 +133,15 @@ router.post('/addUser', async (ctx, next) => {
   await next();
 });
 
-router.get('/user', async(ctx, next) => {
-  const userDB = await getTable('user');
-  let userArr = [];
-  (await userDB.db.find({}).toArray()).map((item) => {
+router.get('/contentUser', async(ctx, next) => {
+  const contentUserDB = await getTable('user');
+  let contentUserArr = [];
+  (await contentUserDB.db.find({}).toArray()).map((item) => {
     const { _id, ...foo } = item;
-    userArr.push(foo);
+    contentUserArr.push(foo);
   });
-  ctx.body = userArr;
-  userDB.client.close();
+  ctx.body = contentUserArr;
+  contentUserDB.client.close();
   await next();
 });
 
