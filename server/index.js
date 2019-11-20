@@ -121,18 +121,6 @@ router.get('/classContent', async(ctx, next) => {
   await next();
 });
 
-router.post('/addUser', async (ctx, next) => {
-  const classUserDB = await getTable('user');
-  const res = await classUserDB.db.insertMany([ctx.request.body]);
-  classUserDB.client.close();
-  if (res.insertedCount === 1) {
-    ctx.body = {
-      result: 'success'
-    }
-  }
-  await next();
-});
-
 router.get('/contentUser', async(ctx, next) => {
   const contentUserDB = await getTable('user');
   let contentUserArr = [];
@@ -142,6 +130,19 @@ router.get('/contentUser', async(ctx, next) => {
   });
   ctx.body = contentUserArr;
   contentUserDB.client.close();
+  await next();
+});
+
+
+router.post('/addUser', async (ctx, next) => {
+  const classUserDB = await getTable('user');
+  const res = await classUserDB.db.insertMany([ctx.request.body]);
+  classUserDB.client.close();
+  if (res.insertedCount === 1) {
+    ctx.body = {
+      result: 'success'
+    }
+  }
   await next();
 });
 
