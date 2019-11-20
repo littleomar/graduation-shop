@@ -385,12 +385,20 @@ const optionsTable = {
   },
 }
 
-
+function onChange(value) {
+  console.log(value);
+}
 
 const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 
 class theQuery extends React.Component{
-  componentDidMount() {
+  constructor() {
+  super();
+  this.state = {
+    queryContent: [],
+  };
+}
+  async componentDidMount() {
     this.setState({
       formData: {
         address: '',
@@ -398,8 +406,12 @@ class theQuery extends React.Component{
         telphone: void 0,
         birthday: '',
       }
+    });
+    this.setState({
+      queryContent: (await axios.get(`http://ccimm.top:8000/queryContent`)).data,
     })
   }
+
 
   render() {
 
@@ -476,11 +488,36 @@ class theQuery extends React.Component{
             </div>
           </div>
         </div>
-        <div className={style.content}>
+        <div className={style.contentall}>
           <div className={style.contenttitle}>
             <span className={style.titlea}>全国早教中心 ></span>
+            <div>
+              {
+                this.state.queryContent.map(item =>(
+                  <div className={style.titleb}>
+                    {item.bigCity}
+                    <span>国际早教中心</span>
+
+                  </div>
+                  ))
+              }
+              <Cascader options={options} onChange={onChange} className={style.titlec} placeholder="选择城市" />
+            </div>
           </div>
           <div className={style.contentimg}><img src={conbanner}/></div>
+          <div>
+            {
+              this.state.queryContent.map(item =>(
+                <div className={style.content}>
+                  <img src={item.qImg} alt=""/>
+                  <div className={style.contenttexta}>{item.smallCity}</div>
+                  <div className={style.contenttextb}><span className={style.contenttextti}>地址:</span>{item.address}</div>
+                  <div className={style.contenttextb}><span className={style.contenttextti}>电话:</span>{item.tel}</div>
+                  <button className={style.contentbutton}>{item.add}</button>
+                </div>
+              ))
+            }
+          </div>
         </div>
       </div>
     )
