@@ -28,19 +28,19 @@ function App() {
       content: [
         {
           text: '品牌介绍',
-          url: 'http://localhost:3000/about'
+          url: 'http://ccimm.top:3000/about'
         },
         {
           text: '课程介绍',
-          url: 'http://localhost:3000/inbox'
+          url: 'http://ccimm.top:3000/inbox'
         },
         {
           text: '指导老师',
-          url: 'http://localhost:3000/teacher'
+          url: 'http://ccimm.top:3000/teacher'
         },
         {
           text: '教室教具',
-          url: 'http://localhost:3000/class'
+          url: 'http://ccimm.top:3000/class'
         }
       ]
     },
@@ -49,7 +49,7 @@ function App() {
       content: [
         {
           text: '加盟合作',
-          url: 'http://localhost:3000/win'
+          url: 'http://ccimm.top:3000/win'
         },
         {
           text: '工作机会',
@@ -66,7 +66,7 @@ function App() {
         },
         {
           text: '中心查询',
-          url: 'http://localhost:3000/query'
+          url: 'http://ccimm.top:3000/query'
         }
       ]
     }

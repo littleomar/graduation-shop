@@ -37,8 +37,8 @@ class Message extends React.Component {
         </Carousel>
         <div className={MessageStyles.right_nav}>
           <ul className={MessageStyles.ule}>
-            <li className={MessageStyles.auditionb} ><a href='http://localhost:3000/query'><img src={a}/></a> </li>
-            <li className={MessageStyles.auditionc} ><a href='http://localhost:3000/inbox'><img src={b}/></a></li>
+            <li className={MessageStyles.auditionb} ><a href='http://ccimm.top:3000/query'><img src={a}/></a> </li>
+            <li className={MessageStyles.auditionc} ><a href='http://ccimm.top:3000/inbox'><img src={b}/></a></li>
             <li className={MessageStyles.auditiond} />
           </ul>
         </div>
