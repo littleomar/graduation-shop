@@ -2,9 +2,6 @@ import React from 'react';
 import styles from './content.module.css';
 import banner from '../../statics/kcbanner.jpg.png';
 import axios from "axios";
-import MessageStyles from "../Content/message.module.css";
-import AppStyles from "../../App.module.css";
-import {Carousel} from "antd";
 import { Collapse } from 'antd';
 
 const { Panel } = Collapse;

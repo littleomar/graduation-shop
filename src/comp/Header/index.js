@@ -2,7 +2,6 @@ import React from 'react';
 import { Steps, Button, message } from 'antd';
 import axios from 'axios';
 import styles from './header.module.css';
-import xc from '../../statics/xc.jpg';
 import footimg from '../../statics/ppjsf.jpeg';
 import happy from '../../statics/1976happy.png';
 import q from '../../statics/1976year.png';
