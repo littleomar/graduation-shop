@@ -24,7 +24,6 @@
     width: 1200px;
     height: 300px;
     margin: 0 30px;
-    background-color: red;
 }
 .footall{
     width: 1250px;
@@ -49,4 +48,9 @@
     height: 300px;
     float: left;
     margin-right: 8px;
+}
+
+.swiperItem {
+    width: 1200px;
+    height: 300px;
 }

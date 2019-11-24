@@ -121,6 +121,19 @@ router.get('/classContent', async(ctx, next) => {
   await next();
 });
 
+
+router.get('/classImg', async(ctx, next) => {
+  const classImgDB = await getTable('classImg');
+  let classImgArr = [];
+  (await classImgDB.db.find({}).toArray()).map((item) => {
+    const { _id, ...foo } = item;
+    classImgArr.push(foo);
+  });
+  ctx.body = classImgArr;
+  classImgDB.client.close();
+  await next();
+});
+
 router.get('/contentUser', async(ctx, next) => {
   const contentUserDB = await getTable('user');
   let contentUserArr = [];
